@@ -50,7 +50,7 @@
             
             <view class="videobar">
               <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
-              <view class="titleinfo">忘了爱</view>
+              <view class="titleinfo">视频1</view>
               <view class="userinfo">
                 <view class="touxiangbar">
                   <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
@@ -62,7 +62,7 @@
 
             <view class="videobar">
               <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
-              <view class="titleinfo">忘了爱2</view>
+              <view class="titleinfo">视频2</view>
               <view class="userinfo">
                 <view class="touxiangbar">
                   <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
@@ -74,7 +74,7 @@
 
             <view class="videobar">
               <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
-              <view class="titleinfo">忘了爱3</view>
+              <view class="titleinfo">视频3</view>
               <view class="userinfo">
                 <view class="touxiangbar">
                   <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
@@ -86,7 +86,7 @@
 
             <view class="videobar">
               <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
-              <view class="titleinfo">忘了爱4</view>
+              <view class="titleinfo">视频4</view>
               <view class="userinfo">
                 <view class="touxiangbar">
                   <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
