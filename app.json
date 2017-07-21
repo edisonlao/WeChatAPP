@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/wanna/wanna"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff758a",
+    "navigationBarTitleText": "小仙女美丽日记",
+    "navigationBarTextStyle":"#ffffff",
+    "backgroundColor": "#ff758a"
+  }
+}

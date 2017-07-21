@@ -1,0 +1,196 @@
+<!--index.wxml-->
+<view class="body">
+
+  <!--首页-->
+  <view class="middle" id="middle1" hidden="{{hidden1}}">
+    <scroll-view class="scrollbar" scroll-y="true">
+      <view class="left2"> 
+        <view class="commoditybar" style="background-image:url({{commodity1}})">
+          <!--
+          <view class="test"  wx:for="{{result}}" wx:for-item="value">
+               {{value.name}}
+          </view>
+          -->
+        </view>
+      </view>
+      <view class="left2"> 
+        <view class="commoditybar" style="background-image:url({{commodity2}})">
+          
+        </view>
+      </view>
+      <view class="left2"> 
+        <view class="commoditybar" style="background-image:url({{commodity3}})">
+          
+        </view>
+      </view>
+      <view class="left2">
+        <view class="commoditybar" style="background-image:url({{commodity4}})">
+          
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!--种草-->
+  <view class="middle" id="middle2" hidden="{{hidden2}}">
+    <view class="wannaguide">
+      <view class="guidebtn" id="latest" bindtap="movetoleft">最新</view>
+      <view class="guidebtn" id="hot" bindtap="movetocenter">热门</view>
+      <view class="guidebtn" id="nearby" bindtap="movetoright">附近</view>
+    </view>
+    <view class="slipbar">
+      <view class="slip" style="margin-left:{{slipposition}};"></view>
+    </view>
+    <view class="scrollbar">
+      <swiper class="wannaswiper" current="{{currentpage}}" bindchange="EventHandle">
+        
+        <!--最新内容-->
+        <swiper-item class="wannaswiperitem" >
+          <scroll-view class="scrollbar2" scroll-y="true">
+            
+            <view class="videobar">
+              <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+              <view class="titleinfo">忘了爱</view>
+              <view class="userinfo">
+                <view class="touxiangbar">
+                  <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                  <view class="usernickname">{{userInfo.nickName}}</view>
+                  <!--<view class="usercity">{{userInfo.city}}</view>-->
+                </view>
+              </view>
+            </view>
+
+            <view class="videobar">
+              <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+              <view class="titleinfo">忘了爱2</view>
+              <view class="userinfo">
+                <view class="touxiangbar">
+                  <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                  <view class="usernickname">{{userInfo.nickName}}</view>
+                  <!--<view class="usercity">{{userInfo.city}}</view>-->
+                </view>
+              </view>
+            </view>
+
+            <view class="videobar">
+              <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+              <view class="titleinfo">忘了爱3</view>
+              <view class="userinfo">
+                <view class="touxiangbar">
+                  <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                  <view class="usernickname">{{userInfo.nickName}}</view>
+                  <!--<view class="usercity">{{userInfo.city}}</view>-->
+                </view>
+              </view>
+            </view>
+
+            <view class="videobar">
+              <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+              <view class="titleinfo">忘了爱4</view>
+              <view class="userinfo">
+                <view class="touxiangbar">
+                  <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                  <view class="usernickname">{{userInfo.nickName}}</view>
+                  <!--<view class="usercity">{{userInfo.city}}</view>-->
+                </view>
+              </view>
+            </view>
+
+          </scroll-view>    
+        </swiper-item>
+
+        <!--热门内容-->
+        <swiper-item class="wannaswiperitem">
+          <view class="videobar">
+            <video class="video1" src="http://gslb.miaopai.com/stream/UXveixm25k-xVwQa9ea4qQ__.mp4?ssig=8212804093e08f6b6ebe1acebf1c8d84&time_stamp=1497020470159&cookie_id=&vend=1&os=3&partner=4&platform=2&cookie_id=&refer=miaopai&scid=UXveixm25k-xVwQa9ea4qQ__" ></video>
+            <view class="titleinfo">热门资讯</view>
+            <view class="userinfo">
+              <view class="touxiangbar">
+                <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                <view class="usernickname">{{userInfo.nickName}}</view>
+                <!--<view class="usercity">{{userInfo.city}}</view>-->
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+        
+        <!--附近内容-->
+        <swiper-item class="wannaswiperitem">
+          <view class="videobar">
+            <video class="video1" src="http://gslb.miaopai.com/stream/JK~pVqkFVciNN5sKtXQXXQ__.mp4?ssig=75d3925e028bcfb9d3036708bd731102&time_stamp=1497020831331&cookie_id=593aaa2522bcb&vend=1&os=3&partner=4&platform=2&cookie_id=&refer=miaopai&scid=JK%7EpVqkFVciNN5sKtXQXXQ__" ></video>
+            <view class="titleinfo">附近小雷达</view>
+            <view class="userinfo">
+              <view class="touxiangbar">
+                <image id="touxiang" src="{{userInfo.avatarUrl}}"></image>
+                <view class="usernickname">{{userInfo.nickName}}</view>
+                <!--<view class="usercity">{{userInfo.city}}</view>-->
+              </view>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+      
+    </view>
+  </view>
+
+  <!--拔草-->
+  <view class="middle" id="middle3" hidden="{{hidden3}}">
+    <view class="wrapper">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+
+      <form bindsubmit="openLocation">
+        <view class="page-body-form">
+
+            <text class="page-body-form-key">经度</text>
+            <input class="page-body-form-value" type="text" value="{{location.longitude}}" name="longitude"></input>
+
+            <text class="page-body-form-key">纬度</text>
+            <input class="page-body-form-value" type="text"  value="{{location.latitude}}" name="latitude"></input>
+
+
+            <text class="page-body-form-key">精确度</text>
+            <input class="page-body-form-value" type="text"  value="{{location.accuracy}}" name="name"></input>
+
+
+            <!--<text class="page-body-form-key">详细位置</text>
+            <input class="page-body-form-value" type="text"  value="浙江大学滨海产业技术研究院" name="address"></input>-->
+
+        </view>
+
+        <view class="page-body-buttons">
+          <button class="page-body-button" bindtap="getLocation">获取位置</button>
+          <button class="page-body-button" formType="submit">查看位置</button>
+        </view>
+
+      </form>
+    </view>
+  </view>
+</view>
+  </view>
+
+  <!--我的-->
+  <view class="middle" id="middle4" hidden="{{hidden4}}">
+
+  </view>
+
+<!--底部控件-->
+  <view class="bottom">
+    <view class="bicon" bindtap="skiphome">
+      <image class="bimage" id="i1" src="{{bicon1}}"></image>
+      <text class="btext" id="home" style="color:{{btext1}};">首页</text>
+    </view>
+    <view class="bicon" bindtap="skipwanna">
+      <image class="bimage" id="i2" src="{{bicon2}}"></image>
+      <text class="btext" id="wanna" style="color:{{btext2}};">种草</text>
+    </view>
+    <view class="bicon" bindtap="skipbuy">
+      <image class="bimage" id="i3" src="{{bicon3}}"></image>
+      <text class="btext" id="buy" style="color:{{btext3}};">拔草</text>
+    </view>
+    <view class="bicon" bindtap="skipmy">
+      <image class="bimage" id="i4" src="{{bicon4}}"></image>
+      <text class="btext" id="mydiary" style="color:{{btext4}};">我的</text>
+    </view>
+  </view>
+</view>

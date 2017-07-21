@@ -1,0 +1,28 @@
+<view class="userinfo">
+          <image id="touxiang" src="../pic/touxiang.png"></image>
+        </view>
+        <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+
+
+
+
+
+
+
+
+
+/*********************************/
+
+
+app.getUserInfo(function(userInfo){
+      //更新数据
+      that.setData({
+        userInfo:userInfo
+      })
+    })
+
+
+
+
+ <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>

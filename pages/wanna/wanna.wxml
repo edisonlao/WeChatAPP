@@ -1,0 +1,58 @@
+<!--wanna.wxml-->
+<view class="body">
+  
+  <view class="middle">
+    <scroll-view class="scrollbar" scroll-y="true">
+      <view class="wannaguide">
+        <view class="guidebtn" id="latest" bindtap="movetoleft">最近</view>
+        <view class="guidebtn" id="hot" bindtap="movetocenter">热门</view>
+        <view class="guidebtn" id="nearby" bindtap="movetoright">附近</view>
+      </view>
+      <view class="slipbar">
+        <view class="slip" style="margin-left:{{slipposition}};"></view>
+      </view>
+      <swiper class="wannaswiper" current="{{currentpage}}" bindchange="EventHandle">
+        <swiper-item class="wannaswiperitem" >
+          <view class="userinfo">
+            <image id="touxiang" src="../pic/touxiang.png"></image>
+          </view>
+          <video class="video1" src="https://gifshow-10011997.file.myqcloud.com/udata/W_fBvF-juSJtw_zh.mp4" ></video>
+        </swiper-item>
+         <swiper-item class="wannaswiperitem">
+          <view class="userinfo">
+            <image id="touxiang" src="../pic/touxiang.png"></image>
+          </view>
+          <video class="video1" src="http://gslb.miaopai.com/stream/UXveixm25k-xVwQa9ea4qQ__.mp4?ssig=8212804093e08f6b6ebe1acebf1c8d84&time_stamp=1497020470159&cookie_id=&vend=1&os=3&partner=4&platform=2&cookie_id=&refer=miaopai&scid=UXveixm25k-xVwQa9ea4qQ__" ></video>
+        </swiper-item>
+        <swiper-item class="wannaswiperitem">
+          <view class="userinfo">
+            <image id="touxiang" src="../pic/touxiang.png"></image>
+          </view>
+          <video class="video1" src="http://gslb.miaopai.com/stream/JK~pVqkFVciNN5sKtXQXXQ__.mp4?ssig=75d3925e028bcfb9d3036708bd731102&time_stamp=1497020831331&cookie_id=593aaa2522bcb&vend=1&os=3&partner=4&platform=2&cookie_id=&refer=miaopai&scid=JK%7EpVqkFVciNN5sKtXQXXQ__" ></video>
+        </swiper-item>
+      </swiper>
+      
+      <view class="videobar">
+        
+      </view>
+    </scroll-view>
+  </view>
+  <view class="bottom">
+    <view class="bicon" bindtap="skiphome">
+      <image class="bimage" id="i1" src="{{bicon1}}"></image>
+      <text class="btext" id="home">首页</text>
+    </view>
+    <view class="bicon">
+      <image class="bimage" id="i2" src="{{bicon2}}"></image>
+      <text class="btext" id="wanna">种草</text>
+    </view>
+    <view class="bicon">
+      <image class="bimage" id="i3" src="{{bicon3}}"></image>
+      <text class="btext" id="buy">拔草</text>
+    </view>
+    <view class="bicon">
+      <image class="bimage" id="i4" src="{{bicon4}}"></image>
+      <text class="btext" id="mydiary">我的</text>
+    </view>
+  </view>
+</view>
